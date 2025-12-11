@@ -9,7 +9,19 @@ global current_user
 MEDIA_DIR = "./media/"
 
 songs = [Song("circles", "3:35", "2019-08-30", Genre.POP),
-         Song("birds_of_a_feather", "4:14", "2021-11-19", Genre.POP)]
+         Song("birds_of_a_feather", "4:14", "2021-11-19", Genre.POP),
+         Song("99999999-Acid Blood", "3:31", "2020-16-12",Genre.TECHNO),
+         Song("Aitana-Los Angeles", "2:38","2024-1-4",Genre.POP),
+         Song("Anuel-feat Badbunny-La ultima vez", "5:00", "2023-4-9", Genre.TRAP),
+         Song("Beny jr-2019", "2:33", "2012-5-4", Genre.DRILL),
+         Song("Beny jr-Mbappe,Bellingham,Vinicius Jr", "2:54", "2015-2-23", Genre.DRILL),
+         Song("Carl Cox-Finder", "3:26", "2010-3-12", Genre.TECHNO),
+
+
+
+
+
+         ]
 
 
 def reproduce_song(song):
@@ -116,6 +128,7 @@ def menu():
 
         print("\t1. Reproducir PlayList\t\t\t2. Reproducir Canción")
         print("\t3. Crear Playlist\t\t\t\t4. Tu Wrapped")
+        print("\t\t\t 5. Todas Las Canciones De Spoty")
         print("\t\t\t\t\t\t  0. Salir")
         print("\n**********************************************************************")
 
@@ -160,6 +173,12 @@ def menu():
                 # tu canción mas usada en distintas plalylist,
                 # tu género más escuchado,
                 # Artista favorito
+            elif choice == 5:
+                print("Te mostrare todas canciones de spotify ")
+                for song in songs:
+                    print(f"- {song.name}")
+                print("Estas son las canciones ")
+                break
             elif choice == 0:
                 print("Adiós!")
                 sys.exit(0)

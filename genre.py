@@ -11,4 +11,9 @@ class Genre(Enum):
     CLASSICAL = 8
     ELECTRONIC = 9
     HIPHOP = 10
-    OTHER = 11
+    TECHNO = 11
+    RAP = 12
+    REGGETON = 13
+    TRAP = 14
+    DRILL =15
+    OTHER = 16
