@@ -178,7 +178,6 @@ def menu():
                 for song in songs:
                     print(f"- {song.name}")
                 print("Estas son las canciones ")
-                break
             elif choice == 0:
                 print("Adiós!")
                 sys.exit(0)
